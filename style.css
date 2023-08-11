@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none; 
+}
+:root{
+    --bg--color : #2E86C1;
+    --text-color : white;
+    --heading--font :'Bebas Neue', sans-serif;
+    --text--font: 'Lato', sans-serif;
+    --btn--checkout:#28B463;
+    --btn--clear:#E74C3C;
+    --btn--backtohome : #000000;
+}
+.universal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.universal2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    background-color: var(--bg--color);
+    padding:0px 50px;
+}
+ul{
+    height: 15vh;
+    font-size:40px ;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    color: var(--text-color);
+}
+span{
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.material-symbols-outlined{
+    font-size: 40px;
+}
+.zero-position{
+    position: absolute;
+    top: -22px;
+    right: -46%;
+    font-size: 30px;
+    background: #1A5276;
+    color: white;
+    height: 38px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+.cart-box{
+    position: relative;
+    background:var(--text-color);
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer; 
+    color: black; 
+}
+section{
+    margin: 20px 30px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.entity-box{
+    line-height: 1.5;
+    width: 20vw;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0px 15px;
+}
+.box-image{
+    width:inherit;
+}
+h2{
+    font-family: var(--heading--font);
+}
+p{
+    font-family: var(--text--font);
+}
+.down{
+    color: yellow;
+}
+.up{
+    color: green;
+}
+/* these below css properties belong to cart page  */
+ #section2{
+    display: grid;
+    justify-content: center;
+    gap: 5%;
+}
+.bill_container{
+    text-align: center;
+    margin: 20px 0px;
+}
+.bill_container h2{
+    margin-bottom: 10px;
+}
+.btn-success{
+    background-color: var(--btn--checkout);
+}
+.btn-danger{
+    background-color: var(--btn--clear);
+}
+.btn-primary{
+    display: none;
+    background-color: var(--btn--backtohome);
+}
+.btn-danger,.btn-success,.btn-primary{
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.entity_container{
+    line-height: 1.5;
+    width: fit-content;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.backtoshopping{
+    text-decoration: none;
+    list-style: none;
+    color: var(--text-color);
+} 
+.delete{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+.backtohomebox{
+    display: grid;
+    justify-content: center;
+    margin: 20px 0px;
+    gap: 5%;
+}
+.details{
+    padding: 0px 10px;
+}
+@media screen and (max-width:450px) {
+    ul{
+        font-size: 23px;
+    }
+    .entity-box{
+        width: 70vw;
+        margin: 15px;
+    }
+}
